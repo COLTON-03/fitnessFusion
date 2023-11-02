@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | Fitness Fusion</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'poppins',sans-serif;
+        }
+        .container{
+            width: 100%;
+            height: 100%;
+            padding: 0 8%;
+            background-color: #f8f8f8;
+        }
+        .container h1{
+            color: #0984e3;
+            font-size: 55px;
+            text-align: center;
+            margin-top: 35px;
+        }
+        .container h1::after{
+            content: '';
+            width: 100px;
+            height: 5px;
+            position: absolute;
+            bottom: -5px;
+            left: 50%;
+        }
+        .row{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-gap: 30px;
+            animation: fadeInUp 2s ease;
+        }
+        .service{
+            text-align: center;
+            padding: 25px 10px;
+            border-radius: 5px;
+            font-size: 14px;
+            background: transparent;
+            transition: transform 0.5s, background 0.5s;
+        }
+        .service h2{
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+        .service:hover{
+            background: #0984e3;
+            color: #fff;
+            transform: scale(1.05);
+        }
+        @keyframes fadeInUp{
+            0%{
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            100%{
+                opacity: 1;
+                transform: translateY(0px);
+            }
+        }
+    </style>
+    <div class="container">
+        <h1>Our Services</h1>
+        <div class="row">
+            <div class="service">
+                <h2>Strength Training and Cardiovascular Conditioning:</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, expedita.</p>
+            </div>
+            <div class="service">
+                <h2>Posture Corrective exercises</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, expedita.</p>
+            </div>
+            <div class="service">
+                <h2>Core strengthening</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, expedita.</p>
+            </div>
+            <div class="service">
+                <h2>CrossFit</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, expedita.</p>
+            </div>
+            <div class="service">
+                <h2>HIIT</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, expedita.</p>
+            </div>
+            <div class="service">
+                <h2>Bootcamp</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, expedita.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

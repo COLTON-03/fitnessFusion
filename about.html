@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | Fitness Fusion</title>
+</head>
+<body>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+    .hero{
+      background-color: #f8f8f8;
+      overflow: hidden;
+    }
+    .heading h1{
+      color: #0984e3;
+      font-size: 55px;
+      text-align: center;
+      margin-top: 35px;
+    }
+    header {
+      position: sticky;
+      top: 0;
+      background: rgba(0, 0, 0, 0.8);
+      z-index: 100;
+      width: 100%;
+      height: 75px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 30px 10%;
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+    }
+    ul {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+    }
+    ul li {
+      margin-right: 20px;
+    }
+    ul li a {
+      text-decoration: none;
+      color: #fff;
+    }
+    .logo{
+      font-size: 30px;
+      font-weight: bold;
+      color: #fff;
+      letter-spacing: 1.5px;
+      cursor: pointer;
+    }
+    .container{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 90%;
+      margin: 65px auto;
+    }
+    .hero-content{
+      flex: 1;
+      width: 600px;
+      margin: 0px 25px;
+      animation: fadeInUp 2s ease;
+    }
+    .hero-content h2{
+      font-size: 38px;
+       margin-bottom: 20px;
+       color: #333;
+    }
+    .hero-content p{
+      font-size: 24px;
+      line-height: 1.5;
+      margin-bottom:40px;
+      color: #666;
+    }
+    .hero-image{
+      flex: 1;
+      width: 600px;
+      margin: auto;
+      animation: fadeInRight 2s ease;
+    }
+    img{
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+    @media screen and (max-width:769px){
+      .heading h1{
+        font-size: 45px;
+        margin-top: 30px;
+      }
+      .hero{
+        margin: 0px;
+      }
+      .container{
+        width: 100%;
+        flex-direction: column;
+        margin: 0px;
+      }
+      .hero-content{
+        width: 100%;
+        margin: 35px 0px;
+      }
+      .hero-content h2{
+        font-size: 30px;
+      }
+      .hero-content p{
+        font-size: 18px;
+        margin-bottom: 20px;
+      }
+    }
+    @keyframes fadeInUp{
+      0%{
+        opacity: 0;
+        transform: translateY(50px);
+      }
+      100%{
+        opacity: 1;
+        transform: translateY(0px);
+      }
+    }
+    @keyframes fadeInRight{
+      0%{
+        opacity: 0;
+        transform: translateX(-50px);
+      }
+      100%{
+        opacity: 1;
+        transform: translateX(0px);
+      }
+    }
+  </style>
+  <header>
+    <div class="logo"><p>Fitness Fusion PT</p></div>
+    <nav>
+        <img src="" class="logo">
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT US</a></li>
+            <li><a href="trainers.html">OUR TRAINERS</a></li>
+            <li><a href="services.html">SERVICES</a></li>
+            <li><a href="contact.html">CONTACT US</a></li>
+        </ul>
+    </nav>
+  </header>
+  <section class="hero">
+    <div class="heading">
+      <h1>About Us</h1>
+    </div>
+    <div class="container">
+      <div class="hero-content">
+        <h2>Who are we</h2>
+        <p>Whether you're seeking to lose weight, build muscle, gain confidence, or become part of a welcoming fitness community, Fitness Fusion PT in Dubai has you covered. We are a team of certified trainers and coaches with a wealth of knowledge in various fitness disciplines.  
+        </p>
+      </div>
+      <div class="hero-image">
+        <img src="./images/battleropes.jpg" alt="">
+      </div>
+    </div>
+    <div class="container">
+      <div class="hero-image">
+        <img src="./images/battleropes.jpg" alt="">
+      </div>
+      <div class="hero-content">
+        <h2>Why train with us</h2>
+        <p>We tailor our programs to your specific needs and goals, ensuring a customized training experience.
+          We offer a diverse range of training options, from individual coaching to group classes, including strength training, boxing, jiu-jitsu, HIIT, and Bootcamps.
+          
+        </p>
+      </div>
+    </div>
+    <div class="container">
+      <div class="hero-content">
+        <h2>What sets up apart</h2>
+        <p>Quality takes precedence over quantity. Our team of certified freelance trainers operates independently, free from corporate policies or sales targets. We prioritize personalized, professional training, with no emphasis on numbers or pushing additional sessions.
+        </p>
+      </div>
+      <div class="hero-image">
+        <img src="./images/battleropes.jpg" alt="">
+      </div>
+    </div>
+  </section>
+</body>
+</html>
